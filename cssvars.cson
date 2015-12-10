@@ -1,0 +1,8 @@
+color:
+  font: '#434343'
+  quiet: '#b8b8b8'
+  accent: '#EB7A77'
+
+width: '960px'
+
+size: ipadpro: '1026px'

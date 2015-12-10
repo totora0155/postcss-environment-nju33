@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.u-bounce {
+  animation: bounce;
+}
+
+@prefix block;
+
+.box {
+  color: color($color.font l(+10));
+  border: 1px solid @color;
+}
+
+@media screen and (min-width: $size.ipadpro) {
+  .box {
+    lost-center: $width;
+  }
+}
+
+.image {
+  width: width(500x403.jpg);
+  height: height(500x403.jpg);
+}
+
+.card {
+  lost-column: 1/2 no-flex;
+}
+
+@media screen and (min-width: $size.ipadpro) {
+  .card {
+    lost-column: 1/4 no-flex;
+  }
+}
+
+.input:not(.not1, .not2) {
+  transition: .3s easeInOutBack;
+  border: 1px solid $color.quiet;
+}
+
+&:hover {
+  border: 1px solid $color.accent;
+}
