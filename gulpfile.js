@@ -20,7 +20,7 @@ const processors = [
   require('doiuse')({browsers: ['last 2 versions']}),
   require('autoprefixer')({browser: ['last 2 versions']}),
   require('css-mqpacker'),
-  // require('cssnano') 見づらくなるので今回はコメントアウト
+  require('cssnano')
 ]
 
 gulp.task('postcss', () => {
